@@ -37,7 +37,6 @@ body {
 }
 
 .img {
-  cursor: pointer;
   display: grid;
   place-content: center;
   width: 100%;
@@ -64,6 +63,9 @@ body {
     margin-block: 1.4rem 2.6rem;
   }
 
+  & #open-the-cookie {
+    cursor: pointer;
+  }
 }
 
 .screen-two {
