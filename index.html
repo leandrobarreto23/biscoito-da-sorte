@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biscoito da Sorte</title>
   <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <div id="app">
-    <div class="screen-one hide">
+    <div class="screen-one">
       <h1>Qual é a sua sorte de hoje?</h1>
       <p>Abra o biscoito e descubra!</p>
-      <div class="img">
+      <div class="img" id="open-the-cookie">
         <img src="assets/biscoito.svg" alt="Um biscoito da sorte com uma mensagem no seu interior pronta pra ser aberta">
       </div>
     </div>
-    <div class="screen-two">
+    <div class="screen-two hide">
       <h1>Aqui está a sua sorte de hoje:</h1>
-      <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+      <p id="phrase">Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
       <div class="img">
         <img src="assets/biscoito-aberto.svg" alt="biscoito da sorte quebrado mostrando a mensagem">
       </div>
-      <button>Abrir outro biscoito</button>
+      <button id="open-another-cookie">Abrir outro biscoito</button>
     </div>
   </div>
 </body>
