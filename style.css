@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --cookie-font: 'Dancing Script', cursive;
+  --body-font: 'Montserrat', sans-serif;
+  --body-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+  --main-white: #ffffff;
+  --main-darkblue: #34355B;
+  --main-orange: #FF9500;
+  --main-lightblue: #E4EDF1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--body-font);
+}
+
+#app {
+  padding: 2rem;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(45deg, #190361, #B0F);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+.hide {
+  display: none;
+}
+
+.img {
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 20rem;
+}
+
+.screen-one {
+  max-width: 42.8rem;
+  padding: 4.8rem 6.4rem;
+
+  text-align: center;
+
+  border-radius: .5rem;
+  color: var(--main-darkblue);
+  box-shadow: var(--body-shadow);
+  background-color: var(--main-white);
+
+  & h1 {
+    font-size: 2.4rem;
+  }
+
+  & p {
+    font-size: 1.4rem;
+    margin-block: 1.4rem 2.6rem;
+  }
+
+}
+
+.screen-two {
+  max-width: 42.8rem;
+  padding: 4.8rem 6.4rem;
+
+  text-align: center;
+
+  border-radius: .5rem;
+  color: var(--main-darkblue);
+  box-shadow: var(--body-shadow);
+  background-color: var(--main-white);
+
+  & h1 {
+    font-size: 2.4rem;
+  }
+
+  & p {
+    padding: 1rem;
+    margin-block: 1.6rem;
+
+    font-size: 2.4rem;
+    font-family: var(--cookie-font);
+
+    color: #000;
+    background-color: var(--main-lightblue);
+    box-shadow: 2px 2px 2px 0 rgba(85, 85, 85, 0.50);
+  }
+
+  & button {
+    cursor: pointer;
+    padding: 1.6rem;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: .4rem;
+
+    color: var(--main-white);
+    background-color: var(--main-orange);
+
+    transition: opacity .2s ease-in;
+  }
+
+  & button:hover {
+    opacity: .80;
+  }
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
